@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy-dark: #071A2B;
+  --color-navy-medium: #0B2942;
+  --color-brand-blue: #1264A3;
+  --color-accent-gold: #C5A880; /* Premium muted gold / warm champagne */
+  --color-accent-gold-bright: #D4AF37;
+  --color-accent-cyan: #00B4D8;
+  --color-bg-light: #F7F9FC;
+  --color-text-dark: #0F172A;
+  --color-text-muted: #475569;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Manrope', sans-serif;
+}
+
+html, body {
+  font-family: var(--font-sans);
+  color: var(--color-text-muted);
+  background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Custom utilities for premium aesthetics */
+.text-gradient {
+  background: linear-gradient(135deg, #071A2B 0%, #1264A3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-navy {
+  background: linear-gradient(135deg, #071A2B 0%, #0B2942 100%);
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-glass-dark {
+  background: rgba(11, 41, 66, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F9FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #1264A3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0B2942;
+}
+
+/* Remove default Vite borders */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
