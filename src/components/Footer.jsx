@@ -26,15 +26,15 @@ export default function Footer() {
             <div className="space-y-3.5 text-xs text-slate-400">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                <a href="tel:+919876543210" className="hover:text-white transition-colors">+91 98765 43210</a>
+                <a href="tel:+917993054750" className="hover:text-white transition-colors">+91 7993054750</a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                <a href="mailto:support@credveda.co.in" className="hover:text-white transition-colors">support@truecred.co.in</a>
+                <a href="mailto:srikanth10290@gmail.com" className="hover:text-white transition-colors">srikanth10290@gmail.com</a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                <span>Level 7, Prestige Tech Center, Outer Ring Rd, Bengaluru, KA 560103</span>
+                <span>No.6-50, SN colony, Ramachandra puram, Hyderabad -502032</span>
               </div>
             </div>
           </div>

@@ -38,11 +38,11 @@ export default function Navbar() {
     { label: 'Contact', path: '/contact' },
   ];
 
-  const servicesLinks = [
-    { label: 'Customized Loans', path: '/loans' },
-    { label: 'Mutual Funds Advisory', path: '/mutual-funds' },
-    { label: 'Insurance Solutions', path: '/insurance' },
-  ];
+  // const servicesLinks = [
+  //   { label: 'Customized Loans', path: '/loans' },
+  //   { label: 'Mutual Funds Advisory', path: '/mutual-funds' },
+  //   { label: 'Insurance Solutions', path: '/insurance' },
+  // ];
 
   return (
     <nav
@@ -82,44 +82,7 @@ export default function Navbar() {
             About
           </Link>
 
-          {/* Services Dropdown */}
-          <div
-            className="relative"
-            onMouseEnter={() => setIsDropdownOpen(true)}
-            onMouseLeave={() => setIsDropdownOpen(false)}
-          >
-            <button
-              className={`flex items-center gap-1 text-sm font-semibold transition-colors duration-300 cursor-pointer ${
-                ['/loans', '/mutual-funds', '/insurance'].includes(location.pathname)
-                  ? 'text-brand-blue font-bold'
-                  : 'text-navy-dark/70 hover:text-brand-blue'
-              }`}
-            >
-              <span>Services</span>
-              <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
-            </button>
-
-            {/* Dropdown Menu */}
-            <div
-              className={`absolute top-full -left-4 w-56 pt-4 transition-all duration-300 ${
-                isDropdownOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-2 pointer-events-none'
-              }`}
-            >
-              <div className="bg-white rounded-2xl shadow-xl border border-slate-100 overflow-hidden p-2">
-                {servicesLinks.map((link) => (
-                  <Link
-                    key={link.path}
-                    to={link.path}
-                    className={`block px-4 py-3 text-xs font-semibold rounded-xl transition-colors hover:bg-slate-50 ${
-                      location.pathname === link.path ? 'text-brand-blue bg-brand-blue/5' : 'text-navy-dark/70 hover:text-brand-blue'
-                    }`}
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
+        
 
           <Link
             to="/loans"

@@ -25,7 +25,7 @@ export default function Loans() {
 
     // Rates matching loan ids
     const rates = {
-      'personal-loan': 10.99,
+      'personal-loan': 9.99,
       'business-loan': 12.50,
       'home-loan': 8.40,
       'loan-against-property': 9.00,

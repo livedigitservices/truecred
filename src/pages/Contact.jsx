@@ -44,8 +44,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Support Hotline</span>
-                    <a href="tel:+919876543210" className="text-base font-bold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
-                      +91 98765 43210
+                    <a href="tel:+917993054750" className="text-base font-bold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
+                      +91 7993054750
                     </a>
                     <p className="text-[11px] text-slate-400 font-medium">Toll-free across India</p>
                   </div>
@@ -57,8 +57,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Email Inquiries</span>
-                    <a href="mailto:support@credveda.co.in" className="text-sm font-semibold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
-                      support@truecred.co.in
+                    <a href="mailto:srikanth10290@gmail.com" className="text-sm font-semibold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
+                      srikanth10290@gmail.com
                     </a>
                     <p className="text-[11px] text-slate-400 font-medium">For details and audit support</p>
                   </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Office Address</span>
                     <p className="text-xs text-text-muted mt-0.5 leading-relaxed font-semibold">
-                      Level 7, Prestige Tech Center, Outer Ring Road, Bellandur, Bengaluru, KA 560103
+                      No.6-50, SN colony, Ramachandra puram, Hyderabad -502032
                     </p>
                   </div>
                 </div>

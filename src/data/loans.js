@@ -6,7 +6,7 @@ export const loans = [
     title: 'Personal Loan',
     shortDescription: 'Unsecured personal funding for weddings, medical emergencies, travel, or debt consolidation.',
     icon: User,
-    interestRate: '10.49% p.a. onwards',
+    interestRate: '9.99% p.a. onwards',
     benefit: 'No collateral required',
     tenure: 'Up to 6 years',
     eligibility: 'Salaried or self-employed individuals with a stable monthly income of ₹25,000+.',

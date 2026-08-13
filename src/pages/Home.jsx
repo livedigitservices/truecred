@@ -848,15 +848,15 @@ export default function Home() {
               <div className="space-y-4 pt-4 text-sm font-semibold text-navy-dark">
                 <div>
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Support Hotline</span>
-                  <a href="tel:+919876543210" className="hover:text-brand-blue transition-colors mt-0.5 block text-lg font-bold font-heading">+91 98765 43210</a>
+                  <a href="tel:+917993054750" className="hover:text-brand-blue transition-colors mt-0.5 block text-lg font-bold font-heading">+91 7993054750</a>
                 </div>
                 <div>
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Email Inquiries</span>
-                  <a href="mailto:support@credveda.co.in" className="hover:text-brand-blue transition-colors mt-0.5 block">support@truecred.co.in</a>
+                  <a href="mailto:srikanth10290@gmail.com" className="hover:text-brand-blue transition-colors mt-0.5 block">srikanth10290@gmail.com</a>
                 </div>
                 <div>
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Office Address</span>
-                  <p className="text-xs text-text-muted mt-0.5 leading-relaxed font-normal">Level 7, Prestige Tech Center, Outer Ring Road, Bellandur, Bengaluru, KA 560103</p>
+                  <p className="text-xs text-text-muted mt-0.5 leading-relaxed font-normal">No.6-50, SN colony, Ramachandra puram, Hyderabad -502032</p>
                 </div>
               </div>
             </div>
