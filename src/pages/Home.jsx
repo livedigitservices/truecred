@@ -55,7 +55,7 @@ export default function Home() {
 
   const heroSlides = [
     {
-      main: "Unlock custom financing options and premium interest rates on",
+      main: "Unlock better rates and flexible financing",
       span: "Loans for your growth.",
       highlightBg: "bg-accent-gold/40",
       textColor: "text-brand-blue"
@@ -244,7 +244,6 @@ export default function Home() {
                   </span>
                   <span ref={line2Ref} className={`${heroSlides[currentSlideIndex].textColor} relative inline-block w-fit`}>
                     {heroSlides[currentSlideIndex].span}
-                    <span className={`absolute bottom-1 left-0 w-full h-[6px] ${heroSlides[currentSlideIndex].highlightBg} -z-10 rounded-full`}></span>
                   </span>
                 </h1>
               </div>

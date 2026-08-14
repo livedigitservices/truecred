@@ -16,11 +16,11 @@ export default function ContactForm() {
   const [isSuccess, setIsSuccess] = useState(false);
 
   const servicesList = [
-    { value: 'loans', label: 'Customized Loans' },
-    { value: 'cibil-repair', label: 'CIBIL Score Repair' },
-    { value: 'ca-cs', label: 'CA & CS Compliance' },
-    { value: 'insurance', label: 'Wealth Protection / Insurance' },
-    { value: 'other', label: 'General Financial Advisory' },
+    { value: 'personal-loan', label: 'Personal loan' },
+    { value: 'home-loan', label: 'Home Loan' },
+    { value: 'term-insurance', label: 'Term insurance' },
+    { value: 'health-insurance', label: 'Health insurance' },
+    { value: 'mutual-fund-advisory', label: 'Mutual fund advisory' },
   ];
 
   const validate = () => {
@@ -68,8 +68,8 @@ export default function ContactForm() {
       phone: formData.phone,
       service: formData.service,
       message: formData.message,
-      subject: "New Consultation Request - TrueCred",
-      from_name: "TrueCred Website"
+      subject: "New Consultation Request - CredVeda",
+      from_name: "CredVeda Website"
     };
 
     fetch("https://api.web3forms.com/submit", {
