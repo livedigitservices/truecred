@@ -55,7 +55,7 @@ export default function Home() {
 
   const heroSlides = [
     {
-      main: "Facilitating custom financing with competitive",
+      main: "Unlock custom financing options and premium interest rates on",
       span: "Loans for your growth.",
       highlightBg: "bg-accent-gold/40",
       textColor: "text-brand-blue"
