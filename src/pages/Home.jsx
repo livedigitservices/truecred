@@ -49,7 +49,54 @@ export default function Home() {
   // Testimonial Carousel State
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Mutual Funds Refactor
+  // Dynamic infinite text-reveal slide configurations
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const slideTextRef = useRef(null);
+
+  const heroSlides = [
+    {
+      main: "Facilitating custom financing with competitive",
+      span: "Loans for your growth.",
+      highlightBg: "bg-accent-gold/40",
+      textColor: "text-brand-blue"
+    },
+    {
+      main: "Compound your wealth over time with smart",
+      span: "Mutual Funds portfolios.",
+      highlightBg: "bg-emerald-500/20",
+      textColor: "text-emerald-600"
+    },
+    {
+      main: "Shield your family and business with",
+      span: "Insurance protection.",
+      highlightBg: "bg-[#00B4D8]/20",
+      textColor: "text-[#00B4D8]"
+    }
+  ];
+
+  // Infinite Slideshow Timer Effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Fade out current slide text
+      gsap.to(slideTextRef.current, {
+        opacity: 0,
+        y: -15,
+        duration: 0.4,
+        ease: "power2.in",
+        onComplete: () => {
+          // Switch to next slide index
+          setCurrentSlideIndex((prev) => (prev + 1) % heroSlides.length);
+          // Position slide text down and animate in
+          gsap.fromTo(slideTextRef.current, 
+            { opacity: 0, y: 15 },
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
+          );
+        }
+      });
+    }, 4500);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     // 1. Hero Intro GSAP Animation
@@ -184,13 +231,15 @@ export default function Home() {
                 <span>FINANCIAL SOLUTIONS • BUILT AROUND YOU</span>
               </span>
 
-              <h1 ref={titleRef} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy-dark leading-tight tracking-tight">
-                Financial clarity for the decisions that{' '}
-                <span className="text-brand-blue relative inline-block">
-                  move your life forward.
-                  <span className="absolute bottom-1 left-0 w-full h-[6px] bg-accent-gold/40 -z-10 rounded-full"></span>
-                </span>
-              </h1>
+              <div ref={titleRef} className="min-h-[180px] md:min-h-[150px] lg:min-h-[180px] flex flex-col justify-start">
+                <h1 ref={slideTextRef} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy-dark leading-tight tracking-tight">
+                  {heroSlides[currentSlideIndex].main}{' '}
+                  <span className={`${heroSlides[currentSlideIndex].textColor} relative inline-block`}>
+                    {heroSlides[currentSlideIndex].span}
+                    <span className={`absolute bottom-1 left-0 w-full h-[6px] ${heroSlides[currentSlideIndex].highlightBg} -z-10 rounded-full`}></span>
+                  </span>
+                </h1>
+              </div>
 
               <p ref={textRef} className="text-sm md:text-base leading-relaxed text-text-muted max-w-xl">
                 CredVeda is your dedicated financial desk, helping you navigate customized loans, mutual funds wealth advisory, and robust asset protection under one secure banner.
