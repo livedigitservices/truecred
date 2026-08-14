@@ -49,9 +49,9 @@ export default function Home() {
   // Testimonial Carousel State
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // Dynamic infinite text-reveal slide configurations
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-  const slideTextRef = useRef(null);
+  const line1Ref = useRef(null);
+  const line2Ref = useRef(null);
 
   const heroSlides = [
     {
@@ -74,25 +74,31 @@ export default function Home() {
     }
   ];
 
-  // Infinite Slideshow Timer Effect
+  // Infinite Slideshow Timer Effect - Line-by-Line Staggered Transitions
   useEffect(() => {
     const interval = setInterval(() => {
-      // Fade out current slide text
-      gsap.to(slideTextRef.current, {
-        opacity: 0,
-        y: -15,
-        duration: 0.4,
-        ease: "power2.in",
+      // Fade out Line 1 and Line 2 staggered
+      const tlOut = gsap.timeline({
         onComplete: () => {
           // Switch to next slide index
           setCurrentSlideIndex((prev) => (prev + 1) % heroSlides.length);
-          // Position slide text down and animate in
-          gsap.fromTo(slideTextRef.current, 
+          
+          // Fade in Line 1 and Line 2 staggered
+          const tlIn = gsap.timeline();
+          tlIn.fromTo(line1Ref.current,
             { opacity: 0, y: 15 },
             { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }
           );
+          tlIn.fromTo(line2Ref.current,
+            { opacity: 0, y: 15 },
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+            "-=0.35" // Overlaps line 2 fade-in slightly for smooth staggered flow
+          );
         }
       });
+
+      tlOut.to(line1Ref.current, { opacity: 0, y: -15, duration: 0.35, ease: "power2.in" });
+      tlOut.to(line2Ref.current, { opacity: 0, y: -15, duration: 0.35, ease: "power2.in" }, "-=0.25");
     }, 4500);
 
     return () => clearInterval(interval);
@@ -231,10 +237,12 @@ export default function Home() {
                 <span>FINANCIAL SOLUTIONS • BUILT AROUND YOU</span>
               </span>
 
-              <div ref={titleRef} className="min-h-[180px] md:min-h-[150px] lg:min-h-[180px] flex flex-col justify-start">
-                <h1 ref={slideTextRef} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy-dark leading-tight tracking-tight">
-                  {heroSlides[currentSlideIndex].main}{' '}
-                  <span className={`${heroSlides[currentSlideIndex].textColor} relative inline-block`}>
+              <div ref={titleRef} className="min-h-[220px] sm:min-h-[180px] md:min-h-[160px] lg:min-h-[200px] flex flex-col justify-start">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-navy-dark leading-tight tracking-tight flex flex-col gap-3">
+                  <span ref={line1Ref} className="block">
+                    {heroSlides[currentSlideIndex].main}
+                  </span>
+                  <span ref={line2Ref} className={`${heroSlides[currentSlideIndex].textColor} relative inline-block w-fit`}>
                     {heroSlides[currentSlideIndex].span}
                     <span className={`absolute bottom-1 left-0 w-full h-[6px] ${heroSlides[currentSlideIndex].highlightBg} -z-10 rounded-full`}></span>
                   </span>
