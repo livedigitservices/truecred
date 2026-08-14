@@ -27,7 +27,7 @@ export default function Contact() {
                   GET IN TOUCH
                 </span>
                 <h2 className="text-3xl font-extrabold text-navy-dark leading-tight tracking-tight">
-                  Reach out to our Bangalore office
+                  Reach out to our Hyderabad office
                 </h2>
                 <p className="text-xs md:text-sm text-text-muted mt-4 leading-relaxed">
                   We look forward to structuring your finances. Drop us an email, give us a call, or fill out the consultation request on the right.

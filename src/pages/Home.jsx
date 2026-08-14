@@ -361,7 +361,7 @@ export default function Home() {
               <div className="w-16 h-1 bg-accent-gold rounded-full" />
               
               <p className="text-sm md:text-base leading-relaxed text-text-muted">
-                At CredVeda, we believe secure financial growth isn't just about matching transactions. It's about structuring long-term trust. We work alongside individuals and corporate business owners, ensuring your funding is organized, your liabilities are insured, and your taxation credentials remain fully compliant.
+                At TrueCred, we believe secure financial growth isn't just about matching transactions. It's about structuring long-term trust. We work alongside individuals and corporate business owners, ensuring your funding is organized, your liabilities are insured, and your taxation credentials remain fully compliant.
               </p>
 
               <ul className="space-y-4 pt-4">
@@ -557,7 +557,7 @@ export default function Home() {
               OUR PLEDGE
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight tracking-tight">
-              Why clients choose CredVeda
+              Why clients choose TrueCred
             </h2>
           </div>
 

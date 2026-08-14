@@ -28,7 +28,7 @@ export default function About() {
               </h2>
               <div className="w-12 h-1 bg-accent-gold rounded-full" />
               <p className="text-sm md:text-base leading-relaxed text-text-muted">
-                CredVeda was established to resolve a persistent friction in the Indian financial space: complexity. Navigating multiple banking rules for business loans, auditing credit score inaccuracies, or filing complex ROC compliance returns should not drain your core productivity.
+                TrueCred was established to resolve a persistent friction in the Indian financial space: complexity. Navigating multiple banking rules for business loans, auditing credit score inaccuracies, or filing complex ROC compliance returns should not drain your core productivity.
               </p>
               <p className="text-sm md:text-base leading-relaxed text-text-muted">
                 We bring certified expertise and an end-to-end management workflow under one unified advisory desk. By mapping credit analytics with over 50 leading banks and NBFCs, we secure optimal terms for our clients while keeping applications fully aligned.
