@@ -30,7 +30,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                <a href="mailto:srikanth10290@gmail.com" className="hover:text-white transition-colors">srikanth10290@gmail.com</a>
+                <a href="mailto:truecredonline@gmail.com" className="hover:text-white transition-colors">truecredonline@gmail.com</a>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-brand-blue flex-shrink-0" />

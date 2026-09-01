@@ -62,14 +62,14 @@ export default function ContactForm() {
     
     // Web3Forms Integration
     const payload = {
-      access_key: "YOUR_ACCESS_KEY_HERE", // Replace this with your Web3Forms Access Key
+      access_key: "f111f001-6acd-4c43-906c-6ed6047260e2", // Replace this with your Web3Forms Access Key
       name: formData.fullName,
       email: formData.email,
       phone: formData.phone,
       service: formData.service,
       message: formData.message,
       subject: "New Consultation Request - CredVeda",
-      from_name: "CredVeda Website"
+      from_name: "TrueCred Website"
     };
 
     fetch("https://api.web3forms.com/submit", {
