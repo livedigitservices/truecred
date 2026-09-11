@@ -108,8 +108,8 @@ export default function Contact() {
             <div className="absolute inset-0 bg-navy-medium/10" />
             <div className="relative z-10 text-center bg-white rounded-2xl p-5 shadow-lg border border-slate-100 max-w-xs">
               <MapPin className="w-8 h-8 text-brand-blue mx-auto mb-2" />
-              <h4 className="text-xs font-bold text-navy-dark">TrueCred Headquarters</h4>
-              <p className="text-[10px] text-text-muted mt-1 leading-normal">Level 7, Prestige Tech Center, Outer Ring Rd, Bellandur, Bengaluru</p>
+              <h4 className="text-xs font-bold text-navy-dark">TrueCred Office</h4>
+              <p className="text-[10px] text-text-muted mt-1 leading-normal">No.6-50, SN colony, Ramachandra puram, Hyderabad -502032</p>
             </div>
           </div>
         </div>
