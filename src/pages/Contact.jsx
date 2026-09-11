@@ -57,8 +57,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Email Inquiries</span>
-                    <a href="mailto:srikanth10290@gmail.com" className="text-sm font-semibold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
-                      srikanth10290@gmail.com
+                    <a href="mailto:truecredonline@gmail.com" className="text-sm font-semibold text-navy-dark hover:text-brand-blue transition-colors mt-0.5 block">
+                      truecredonline@gmail.com
                     </a>
                     <p className="text-[11px] text-slate-400 font-medium">For details and audit support</p>
                   </div>

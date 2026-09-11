@@ -908,7 +908,7 @@ export default function Home() {
                 </div>
                 <div>
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Email Inquiries</span>
-                  <a href="mailto:srikanth10290@gmail.com" className="hover:text-brand-blue transition-colors mt-0.5 block">srikanth10290@gmail.com</a>
+                  <a href="mailto:srikanth10290@gmail.com" className="hover:text-brand-blue transition-colors mt-0.5 block">truecredonline@gmail.com</a>
                 </div>
                 <div>
                   <span className="text-[10px] uppercase tracking-wider text-slate-400 font-bold block">Office Address</span>

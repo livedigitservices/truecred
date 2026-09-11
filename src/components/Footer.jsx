@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="flex items-center gap-2 group">
               <div className="w-9 h-9 bg-white/10 rounded-xl flex items-center justify-center text-white group-hover:bg-brand-blue transition-all duration-300">
-                <Award className="w-5 h-5 text-accent-gold-bright" />
+                <img src="/logo.png" alt="" />
               </div>
               <span className="font-heading font-extrabold text-xl tracking-tight text-white uppercase">
                 True<span className="text-brand-blue group-hover:text-white transition-colors">Cred</span>
@@ -81,20 +81,27 @@ export default function Footer() {
             © {new Date().getFullYear()} TrueCred. All rights reserved. Made in India.
           </p>
           
-          <div className="flex items-center gap-4">
-            <a href="#" className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400" aria-label="Twitter">
-              <Twitter className="w-4 h-4" />
-            </a>
-            <a href="#" className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400" aria-label="LinkedIn">
-              <Linkedin className="w-4 h-4" />
-            </a>
-            <a href="#" className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400" aria-label="Facebook">
-              <Facebook className="w-4 h-4" />
-            </a>
-            <a href="#" className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400" aria-label="Instagram">
-              <Instagram className="w-4 h-4" />
-            </a>
-          </div>
+       <div className="flex items-center gap-4">
+  <a
+    href="https://www.facebook.com/profile.php?id=61594471732373"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400"
+    aria-label="Facebook"
+  >
+    <Facebook className="w-4 h-4" />
+  </a>
+
+  <a
+    href="https://www.instagram.com/truecredsolutions/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="p-2 bg-white/5 hover:bg-brand-blue hover:text-white rounded-lg transition-all text-slate-400"
+    aria-label="Instagram"
+  >
+    <Instagram className="w-4 h-4" />
+  </a>
+</div>
         </div>
 
       </div>

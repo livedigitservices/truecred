@@ -68,7 +68,7 @@ export default function ContactForm() {
       phone: formData.phone,
       service: formData.service,
       message: formData.message,
-      subject: "New Consultation Request - CredVeda",
+      subject: "New Consultation Request - TrueCred",
       from_name: "TrueCred Website"
     };
 
@@ -135,7 +135,7 @@ export default function ContactForm() {
             name="fullName"
             value={formData.fullName}
             onChange={handleChange}
-            placeholder="e.g. Rahul Sharma"
+            placeholder="e.g. Tharun Mellacheruvu"
             className={`w-full px-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-dark placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
               errors.fullName ? 'border-red-500 bg-red-50/20' : 'border-slate-100 focus:border-brand-blue'
             }`}
@@ -172,7 +172,7 @@ export default function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="e.g. rahul@example.com"
+              placeholder="e.g. tharun@example.com"
               className={`w-full px-4 py-3 bg-slate-50 border rounded-xl text-sm text-navy-dark placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-blue/20 transition-all ${
                 errors.email ? 'border-red-500 bg-red-50/20' : 'border-slate-100 focus:border-brand-blue'
               }`}

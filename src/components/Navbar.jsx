@@ -55,8 +55,8 @@ export default function Navbar() {
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         {/* Company Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 bg-navy-dark rounded-xl flex items-center justify-center text-white group-hover:bg-brand-blue transition-all duration-300">
-            <Award className="w-5 h-5 text-accent-gold-bright" />
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center text-white group-hover:bg-brand-blue transition-all duration-300">
+            <img src="/logo.png" alt="" />
           </div>
           <span className="font-heading font-extrabold text-xl tracking-tight text-navy-dark uppercase">
             True<span className="text-brand-blue group-hover:text-navy-medium transition-colors">Cred</span>
